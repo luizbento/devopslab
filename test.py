@@ -12,7 +12,7 @@ class Test(unittest.TestCase):
 
     def test_requisicao(self):
         # compara o status da requisicao (precisa ser igual a 200)
-        self.assertEqual(self.result.status_code, 100)
+        self.assertEqual(self.result.status_code, 200)
 
     def test_conteudo(self):
         # verifica o retorno do conteudo da pagina
