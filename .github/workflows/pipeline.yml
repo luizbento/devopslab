@@ -31,6 +31,12 @@ jobs:
       - name: Coverage Report
         run: python -m coverage xml
 
+      # https://www.codewrecks.com/post/github/python-sonarcloud-actions/
+      - uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage
+          path: ./
+
   SonarCloud:
     name: SonarCloud
     runs-on: ubuntu-latest
