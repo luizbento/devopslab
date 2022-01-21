@@ -39,10 +39,10 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       
-      - name: Coverage Test
-        run: python -m coverage run test.py
+      - name: Install Requirements
+        run: coverage
 
-      - name: Coverage Report
+      - name: Coverage
         run: python -m coverage xml
 
       - name: SonarCloud Scan
