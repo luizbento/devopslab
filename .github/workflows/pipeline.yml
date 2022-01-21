@@ -43,7 +43,7 @@ jobs:
         run: pip install coverage
 
       - name: Coverage
-        run: python -m coverage xml
+        run: python -m coverage xml -i
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
